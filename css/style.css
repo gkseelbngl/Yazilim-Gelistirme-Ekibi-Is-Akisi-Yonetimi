@@ -1,0 +1,194 @@
+/* Genel Stil */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2b2b2b;
+    color: #ecf0f1;
+    margin: 0;
+    padding: 0;
+}
+
+/* Başlık Stili */
+header {
+    background-color: #1a1a1a;
+    color: #ecf0f1;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #ecf0f1;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #444;
+    border-color: #ecf0f1;
+    color: #ecf0f1;
+}
+
+/* İçerik Stili */
+.container {
+    margin-top: 20px;
+}
+
+.jumbotron {
+    background-color: #3b3b3b;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    color: #ecf0f1;
+    text-align: center;
+}
+
+.jumbotron .btn {
+    margin-right: 10px;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.jumbotron .btn-primary {
+    background-color: #e67e22;
+    border-color: #e67e22;
+}
+
+.jumbotron .btn-primary:hover {
+    background-color: #d35400;
+    border-color: #d35400;
+    transform: translateY(-3px);
+}
+
+.jumbotron .btn-secondary {
+    background-color: #3498db;
+    border-color: #3498db;
+}
+
+.jumbotron .btn-secondary:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+    transform: translateY(-3px);
+}
+
+/* Footer Stili */
+footer {
+    background-color: #1a1a1a;
+    color: #8da957;
+    padding: 15px 0;
+    text-align: center;
+    margin-top: 40px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Tablo Stili */
+.table {
+    background-color: #3b3b3b;
+    color: #ecf0f1;
+}
+
+.table thead {
+    background-color: #444;
+}
+
+.table tbody tr:hover {
+    background-color: #2b2b2b;
+}
+
+/* Form Elemanları Stili */
+.form-control {
+    background-color: #2b2b2b;
+    color: #ecf0f1;
+    border: 1px solid #444;
+}
+
+.form-control:focus {
+    background-color: #2b2b2b;
+    color: #ecf0f1;
+    border: 1px solid #e67e22;
+}
+
+/* Buton Stili */
+.btn-primary {
+    background-color: #e67e22;
+    border-color: #e67e22;
+}
+
+.btn-primary:hover {
+    background-color: #d35400;
+    border-color: #d35400;
+}
+
+.btn-secondary {
+    background-color: #3498db;
+    border-color: #3498db;
+}
+
+.btn-secondary:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+}
+
+/* Modal İçeriği Stili */
+.modal-content {
+    background-color: #3b3b3b;
+    color: #ecf0f1;
+    border: 1px solid #444;
+}
+
+.close {
+    color: #ecf0f1;
+}
+
+/* Geri Bildirim Mesajı Stili */
+.feedback.success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.feedback.error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+/* Yükleyici Stili */
+.loader {
+    border: 8px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 8px solid #3498db;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* GitHub bağlantı stili */
+footer a.github-link {
+    color: #ffd700;
+    text-decoration: underline;
+}
+
+footer a.github-link:hover {
+    color: #ffbf00;
+}

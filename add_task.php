@@ -14,16 +14,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $title = $_POST['title'];
     $description = $_POST['description'];
     $assigned_to = $_POST['assigned_to'];
-    $status = $_POST['status'];
+    $status = $_POST['status']; // Bu değer artık doğrudan İngilizce olarak alınacak.
+
     $created_at = date("Y-m-d H:i:s");
 
     error_log("Project ID: $project_id, Title: $title, Description: $description, Assigned To: $assigned_to, Status: $status");
 
-    $stmt = $conn->prepare("INSERT INTO tasks (project_id, title, description, assigned_to, status, created_at) VALUES (?, ?, ?, ?, ?, ?)");
+    $stmt = $conn->prepare("INSERT INTO `tasks` (`project_id`, `title`, `description`, `assigned_to`, `status`, `created_at`) VALUES (?, ?, ?, ?, ?, ?)");
     if ($stmt === false) {
         die("Prepare failed: " . $conn->error);
     }
-    $stmt->bind_param("isssis", $project_id, $title, $description, $assigned_to, $status, $created_at);
+    // ENUM tipi için string olarak bağlama yapılıyor.
+    $stmt->bind_param("isssss", $project_id, $title, $description, $assigned_to, $status, $created_at);
 
     if ($stmt->execute()) {
         header("Location: tasks.php");

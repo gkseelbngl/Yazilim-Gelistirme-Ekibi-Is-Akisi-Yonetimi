@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($stmt === false) {
         die("Prepare failed: " . $conn->error);
     }
-    $stmt->bind_param("isssisi", $project_id, $title, $description, $assigned_to, $status, $current_timestamp, $task_id);
+    $stmt->bind_param("isssssi", $project_id, $title, $description, $assigned_to, $status, $current_timestamp, $task_id);
 
     if ($stmt->execute()) {
         // Tüm görevlerin durumunu güncelle

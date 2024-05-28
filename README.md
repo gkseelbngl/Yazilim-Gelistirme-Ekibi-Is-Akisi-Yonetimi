@@ -36,7 +36,7 @@ Bu proje, yazılım geliştirme ekibinizin iş akışını yönetmenize yardımc
      - `Dosya seç` butonuna tıklayarak proje dosyaları içindeki `database.sql` dosyasını seçin ve `Git` butonuna tıklayın.
 
 5. **Veritabanı Bağlantı Ayarları**
-   - `includes/db.php` dosyasını açın ve veritabanı bağlantı bilgilerini kontrol edin. Varsayılan ayarları kullanıyorsanız, değişiklik yapmanıza gerek yoktur:
+   - `db.php` dosyasını açın ve veritabanı bağlantı bilgilerini kontrol edin. Varsayılan ayarları kullanıyorsanız, değişiklik yapmanıza gerek yoktur:
      ```php
      $servername = "localhost";
      $username = "root";
@@ -65,10 +65,9 @@ Bu proje, yazılım geliştirme ekibinizin iş akışını yönetmenize yardımc
 
 ### Sorun Giderme
 
-- **Veritabanı Bağlantı Hataları:** `includes/db.php` dosyasındaki veritabanı bağlantı ayarlarını kontrol edin.
+- **Veritabanı Bağlantı Hataları:** `db.php` dosyasındaki veritabanı bağlantı ayarlarını kontrol edin.
 - **Yüklenme Sorunları:** XAMPP kontrol panelinde `Apache` ve `MySQL` servislerinin çalıştığından emin olun.
 
 ## Videolu Anlatım
 
 Bu projenin kodlarını ve nasıl çalıştığını anlatan YouTube videosu için [buraya tıklayın](https://www.youtube.com/your-video-link).
-

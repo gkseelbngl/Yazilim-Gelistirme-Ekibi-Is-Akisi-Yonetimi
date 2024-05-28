@@ -1,9 +1,9 @@
 <?php
-include('../includes/db.php');
+include('db.php');
 session_start();
 
 if (!isset($_SESSION['user_id'])) {
-    header("Location: ../login.php");
+    header("Location: login.php");
     exit();
 }
 
@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
-<?php include('../includes/header.php'); ?>
+<?php include('header.php'); ?>
 <div class="container mt-5">
     <h2 class="mb-4">Yeni Proje Ekle</h2>
     <form id="add-project-form" method="post" action="">
@@ -44,4 +44,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <a href="projects.php" class="btn btn-secondary">Geri Dön</a>
     </form>
 </div>
-<?php include('../includes/footer.php'); ?>
+<?php include('footer.php'); ?>

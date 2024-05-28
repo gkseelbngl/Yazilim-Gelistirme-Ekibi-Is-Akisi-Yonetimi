@@ -1,9 +1,9 @@
 <?php
-include('../includes/db.php');
+include('db.php');
 session_start();
 
 if (!isset($_SESSION['user_id'])) {
-    header("Location: ../login.php");
+    header("Location: login.php");
     exit();
 }
 
@@ -15,7 +15,7 @@ if (!$result) {
 }
 ?>
 
-<?php include('../includes/header.php'); ?>
+<?php include('header.php'); ?>
 <div class="container mt-5">
     <h1 class="mb-4">Projeler</h1>
     <a href="add_project.php" class="btn btn-primary mb-4">Yeni Proje Ekle</a>
@@ -41,4 +41,4 @@ if (!$result) {
         </tbody>
     </table>
 </div>
-<?php include('../includes/footer.php'); ?>
+<?php include('footer.php'); ?>

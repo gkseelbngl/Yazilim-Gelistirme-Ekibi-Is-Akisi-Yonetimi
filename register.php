@@ -1,5 +1,5 @@
 <?php
-include('includes/db.php');
+include('db.php');
 session_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
-<?php include('includes/header.php'); ?>
+<?php include('header.php'); ?>
 <div class="container mt-5">
     <h2 class="mb-4">Kayıt Ol</h2>
     <?php if (isset($error)) { ?>
@@ -35,4 +35,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <a href="login.php" class="btn btn-secondary">Giriş Yap</a>
     </form>
 </div>
-<?php include('includes/footer.php'); ?>
+<?php include('footer.php'); ?>

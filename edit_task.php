@@ -1,11 +1,11 @@
 <?php
-include('../includes/db.php');
+include('db.php');
 session_start();
 
 date_default_timezone_set('Europe/Istanbul');
 
 if (!isset($_SESSION['user_id'])) {
-    header("Location: ../login.php");
+    header("Location: login.php");
     exit();
 }
 
@@ -73,7 +73,7 @@ $users_sql = "SELECT * FROM users";
 $users_result = $conn->query($users_sql);
 ?>
 
-<?php include('../includes/header.php'); ?>
+<?php include('header.php'); ?>
 <div class="container mt-5">
     <h2 class="mb-4">Görevi Düzenle</h2>
     <form id="edit-task-form" method="post" action="">
@@ -114,4 +114,4 @@ $users_result = $conn->query($users_sql);
         <a href="tasks.php" class="btn btn-secondary">Geri Dön</a>
     </form>
 </div>
-<?php include('../includes/footer.php'); ?>
+<?php include('footer.php'); ?>

@@ -1,9 +1,9 @@
 <?php
-include('../includes/db.php');
+include('db.php');
 session_start();
 
 if (!isset($_SESSION['user_id'])) {
-    header("Location: ../login.php");
+    header("Location: login.php");
     exit();
 }
 
@@ -34,7 +34,7 @@ function translate_status($status)
 
 ?>
 
-<?php include('../includes/header.php'); ?>
+<?php include('header.php'); ?>
 <div class="container mt-5">
     <h1 class="mb-4">Görevler</h1>
     <a href="add_task.php" class="btn btn-primary mb-4">Yeni Görev Ekle</a>
@@ -68,4 +68,4 @@ function translate_status($status)
         </tbody>
     </table>
 </div>
-<?php include('../includes/footer.php'); ?>
+<?php include('footer.php'); ?>

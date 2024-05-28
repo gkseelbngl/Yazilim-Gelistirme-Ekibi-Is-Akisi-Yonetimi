@@ -70,4 +70,4 @@ Bu proje, yazılım geliştirme ekibinizin iş akışını yönetmenize yardımc
 
 ## Videolu Anlatım
 
-Bu projenin kodlarını ve nasıl çalıştığını anlatan YouTube videosu için [buraya tıklayın](https://www.youtube.com/your-video-link).
+Bu projenin kodlarını ve nasıl çalıştığını anlatan YouTube videosu için [buraya tıklayın](https://youtu.be/yk8vp4h6N8c).

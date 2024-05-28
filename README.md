@@ -23,15 +23,15 @@ Bu proje, yazılım geliştirme ekibinizin iş akışını yönetmenize yardımc
 
 3. **Proje Dosyalarını XAMPP'in `htdocs` Klasörüne Taşıyın**
    - İndirilen veya klonlanan proje dosyalarını XAMPP'in `htdocs` klasörüne taşıyın.
-   - Örnek: `C:\xampp\htdocs\web_project2`
+   - Örnek: `C:\xampp\htdocs\Yazilim-Gelistirme-Ekibi-Is-Akisi-Yonetimi`
 
 4. **Veritabanı Kurulumu**
    - XAMPP'i çalıştırın ve `Apache` ve `MySQL` servislerini başlatın.
    - Tarayıcınızı açın ve `http://localhost/phpmyadmin` adresine gidin.
    - Yeni bir veritabanı oluşturun:
-     - Veritabanı adı: `project_db`
+     - Veritabanı adı: `goks_goks`
    - `database.sql` dosyasını phpMyAdmin kullanarak içe aktarın.
-     - Sol taraftaki menüden `project_db` veritabanını seçin.
+     - Sol taraftaki menüden `goks_goks` veritabanını seçin.
      - Üst menüdeki `İçe Aktar` sekmesine tıklayın.
      - `Dosya seç` butonuna tıklayarak proje dosyaları içindeki `database.sql` dosyasını seçin ve `Git` butonuna tıklayın.
 
@@ -39,13 +39,13 @@ Bu proje, yazılım geliştirme ekibinizin iş akışını yönetmenize yardımc
    - `db.php` dosyasını açın ve veritabanı bağlantı bilgilerini kontrol edin. Varsayılan ayarları kullanıyorsanız, değişiklik yapmanıza gerek yoktur:
      ```php
      $servername = "localhost";
-     $username = "root";
-     $password = "";
-     $dbname = "project_db";
+     $username = "goks_goksel";
+     $password = "k0-jig*J^EEMLzd5";
+     $dbname = "goks_goks";
      ```
 
 6. **Projeyi Çalıştırın**
-   - Tarayıcınızı açın ve `http://localhost/web_project2` adresine gidin.
+   - Tarayıcınızı açın ve `http://localhost/Yazilim-Gelistirme-Ekibi-Is-Akisi-Yonetimi` adresine gidin.
    - Uygulama arayüzü karşınıza gelecektir.
 
 ### Kullanıcı Girişi ve Kayıt
